@@ -1,0 +1,16 @@
+package com;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MySampleController {
+	
+	// http://localhost:8080/say
+	@RequestMapping(value = "say", method = RequestMethod.GET)
+	public String sayHello() {
+		return "Welcome to Spring Boot with Rest API";
+	}
+
+}
